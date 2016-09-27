@@ -175,7 +175,7 @@ $(document).ready(function() {
             // Init Backstretch
 
             $(".backstretch-carousel").backstretch([
-                "assets/img/screen-bg_1.jpg",
+                "assets/img/Courtroom.jpg",
                 "assets/img/screen-bg_2.jpg",
                 "assets/img/screen-bg_3.jpg",   
                 "assets/img/screen-bg_4.jpg",   
