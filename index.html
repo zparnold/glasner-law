@@ -11,10 +11,10 @@
     <title>Glasner Law Firm</title>
 
     <!-- CSS Plugins -->
-    <link href="assets/plugins/fullpage/jquery.fullpage.min.css" rel="stylesheet">
     <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-    <link href="assets/plugins/morphext/morphext.css" rel="stylesheet">
     <link href="assets/plugins/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="assets/plugins/fullpage/jquery.fullpage.min.css" rel="stylesheet">
+    <link href="assets/plugins/morphext/morphext.css" rel="stylesheet">
     <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/plugins/open-iconic/css/open-iconic-bootstrap.css" rel="stylesheet">
 
@@ -27,28 +27,24 @@
 
   </head>
 
-  <body>
+  <body class="classic" data-spy="scroll" data-target=".scrollspy_menu">
 
     <!-- PRELOADER
     ============================== -->
     <div class="preloader">
       <img src="assets/img/preloader.gif" alt="Loading..." class="preloader__img">
     </div>
-
-
     <!-- BACKGROUND PATTERN
     ============================== -->
-    <div class="bg-pattern"></div>
 
 
     <!-- BACKSTRETCH CAROUSEL
     ============================== -->
-    <div class="backstretch-carousel"></div>
 
 
     <!-- NAVBAR
     ============================== -->
-    <div class="navbar navbar-default navbar__initial navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar__initial navbar-fixed-top scrollspy_menu" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -61,9 +57,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="fullpage__nav nav navbar-nav navbar-right">
-            <li data-menuanchor="welcome"><a href="#welcome">Welcome</a></li>
-            <li data-menuanchor="about"><a href="#about">About</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact Us</a></li>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -81,7 +77,7 @@
     </div>
 
     <!-- Sidebar menu -->
-    <div class="sidebar__menu sidebar__menu_hidden">
+    <div class="sidebar__menu sidebar__menu_hidden scrollspy_menu">
 
       <!-- Sidebar button close -->
       <div class="sidebar__btn sidebar__btn_close">
@@ -94,32 +90,23 @@
       <div class="sidebar-menu__brand">GLASNER LAW FIRM</div>
 
       <!-- Sidebar links -->
-      <ul class="fullpage__nav sidebar-menu__ul">
-        <li data-menuanchor="welcome"><a href="#welcome">Welcome</a></li>
-        <li data-menuanchor="about"><a href="#about">About</a></li>
-        <li data-menuanchor="contact"><a href="#contact">Contact Us</a></li>
+      <ul class="fullpage__nav sidebar-menu__ul nav">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
 
     </div> <!-- / .sidebar-menu__ul -->
 
 
-    <!-- FULLPAGE.JS CONTAINER
+    <!-- WELCOME
     ============================== -->
-    <div id="fullpage">
-
-      <!-- WELCOME SCREEN
-      ============================== -->
-      <div class="site-wrapper">
+    <div class="welcome_classic" id="welcome">
+      <div class="welcome-classic__inner">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               
-              <!-- Pre heading -->
-              
-              <!-- Heading -->
-              <!-- Separate rotating phrases with "|" and wrap the whole string in .js-rotating -->
-              <!-- Refer to custom_text-rotator.js to choose another animation type or control the rotation speed -->
-
               <h1 class="heading heading_lg">
 
                 <span class="js-rotating">
@@ -153,764 +140,663 @@
             </div>
           </div> <!-- / .row -->
         </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
+      </div> <!-- / .classic-welcome__inner -->
+    </div> <!-- / .welcome_classic -->
 
 
-      <!-- ABOUT SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
+    <!-- ABOUT
+    ============================== -->
+    <div class="site-wrapper" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+            <div class="lead text-center text">
+              <em>
+                [DUMMY CONTENT] We've got over 30 years of experience in California Employment Law. Let us put that experience to work for you.
+              </em>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper_classic -->
+
+    
+
+
+    <!-- PORTFOLIO
+    ============================== -->
+    <div class="site-wrapper" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <!-- Heading -->
+            <h1 class="heading">
+              Here's just a few of the cases we've <span class="text-primary">taken on.</span>
+            </h1>
+
+            <!-- Sub heading -->
+            <p class="heading__sub">
+              We're proud to have worked with each and every one of the individuals below.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <!-- Portfolio items -->
+        <div class="portfolio__items">
+
           <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                What's so <span class="text-primary">awesome</span> about it?
-              </h1>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_2 filter_category_3">
 
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                Advanced customizability and attention to details will help you get your own website up and running in no time.
-              </p>
+              <!-- Portfolio item #1 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #1">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_1.jpg" alt="...">
 
-            </div>
-            <div class="col-sm-4">
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
 
-              <!-- About item #1 -->
-              <div class="about__item">
-                <h3 class="about-item__title">
-                  <span class="about-item-title__icon oi oi-tablet" title="Fully responsive" aria-hidden="true"></span> Fully responsive
-                </h3>
-                <p class="about-item__content">
-                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                </p>
-              </div> <!-- / .about__item -->
-
-            </div>
-            <div class="col-sm-4">
-
-              <!-- About item #2 -->
-              <div class="about__item">
-                <h3 class="about-item__title">
-                  <span class="about-item-title__icon oi oi-project" title="Built with LESS" aria-hidden="true"></span> Built with LESS
-                </h3>
-                <p class="about-item__content">
-                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                </p>
-              </div> <!-- / .about__item -->
-
-            </div>
-            <div class="col-sm-4">
-
-              <!-- About item #3 -->
-              <div class="about__item">
-                <h3 class="about-item__title">
-                  <span class="about-item-title__icon oi oi-envelope-closed" title="Functional contact form" aria-hidden="true"></span> Functional contact form
-                </h3>
-                <p class="about-item__content">
-                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                </p>
-              </div> <!-- / .about__item -->
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
-
-
-      <!-- PORTFOLIO SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                A picture paints a <span class="text-primary">thousand</span> words
-              </h1>
-
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                Some of the works we can be proud of. Feel free to contact us if you like what you see.
-              </p>
-
-            </div>
-            <div class="col-xs-12">
-              
-              <!-- Portfolio navigation -->
-              <div class="portfolio__nav">
-                <a href="#" class="btn btn-lg btn-primary" data-filter="*">
-                  <span class="oi oi-random" title="All" aria-hidden="true"></span>
-                  <span>All</span>
                 </a>
-                <a href="#" class="btn btn-lg btn-primary" data-filter=".filter_category_1">
-                  <span class="oi oi-random" title="Category 1" aria-hidden="true"></span>
-                  <span>Category 1</span>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_1 filter_category_2">
+
+              <!-- Portfolio item #2 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #2">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_2.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
                 </a>
-                <a href="#" class="btn btn-lg btn-primary" data-filter=".filter_category_2">
-                  <span class="oi oi-random" title="Category 2" aria-hidden="true"></span>
-                  <span>Category 2</span>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_3 filter_category_4 filter_category_1">
+
+              <!-- Portfolio item #3 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_3.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #3">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_3.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
                 </a>
-                <a href="#" class="btn btn-lg btn-primary" data-filter=".filter_category_3">
-                  <span class="oi oi-random" title="Category 3" aria-hidden="true"></span>
-                  <span>Category 3</span>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_2 filter_category_3 filter_category_4">
+
+              <!-- Portfolio item #4 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_4.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #4">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_4.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
                 </a>
-                <a href="#" class="btn btn-lg btn-primary" data-filter=".filter_category_4">
-                  <span class="oi oi-random" title="Category 4" aria-hidden="true"></span>
-                  <span>Category 4</span>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_2 filter_category_3 filter_category_4">
+
+              <!-- Portfolio item #5 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_5.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #5">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_5.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
                 </a>
-              </div> <!-- / .portfolio__nav -->
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_1 filter_category_2">
+
+              <!-- Portfolio item #6 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_6.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #6">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_6.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
+                </a>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_3 filter_category_3">
+
+              <!-- Portfolio item #7 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #7">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_1.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
+                </a>
+              </div> <!-- / .portfolio__item -->
+
+            </div>
+            <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_2 filter_category_2 filter_category_3">
+
+              <!-- Portfolio item #8 -->
+              <div class="portfolio__item">
+                <a href="assets/img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #8">
+                    
+                  <!-- Image -->
+                  <img class="img-responsive" src="assets/img/portfolio-screenshot_2.jpg" alt="...">
+
+                  <!-- Mask -->
+                  <div class="portfolio-item__mask">
+                    <div class="portfolio-item-mask__wrapper">
+                      <div class="portfolio-item-mask-wrapper__inner">
+                        <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                        <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                        <p class="portfolio-item-mask__content animated fadeInDown">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                      </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                  </div> <!-- / .portfolio-item__mask -->
+
+                </a>
+              </div> <!-- / .portfolio__item -->
 
             </div>
           </div> <!-- / .row -->
 
-          <!-- Portfolio items -->
-          <div class="portfolio__items">
+        </div> <!-- / .portfolio__items -->
 
-            <div class="row">
-              <div class="col-sm-4 filter__item filter_category_1 filter_category_2 filter_category_3">
+      </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper_classic -->
 
-                <!-- Portfolio item #1 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #1">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_1.jpg" alt="...">
 
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
+    <!-- TEAM
+    ============================== -->
+    <div class="site-wrapper" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <!-- Heading -->
+            <h1 class="heading">
+              They've <span class="text-primary">made</span> this possible
+            </h1>
 
-                  </a>
-                </div> <!-- / .portfolio__item -->
+            <!-- Sub heading -->
+            <p class="heading__sub">
+              A team of hard-working enthusiastic people who helped this product come to life.
+            </p>
 
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <!-- Team member -->
+            <div class="team__member">
+
+              <!-- Avatar -->
+              <div class="team-member__avatar">
+                <img class="img-responsive" src="assets/img/photo_2.jpg" alt="...">
               </div>
-              <div class="col-sm-4 filter__item filter_category_4 filter_category_1 filter_category_2">
 
-                <!-- Portfolio item #2 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #2">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_2.jpg" alt="...">
-
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
-
-                  </a>
-                </div> <!-- / .portfolio__item -->
-
-              </div>
-              <div class="col-sm-4 filter__item filter_category_3 filter_category_4 filter_category_1">
-
-                <!-- Portfolio item #3 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_3.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #3">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_3.jpg" alt="...">
-
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
-
-                  </a>
-                </div> <!-- / .portfolio__item -->
-
-              </div>
-              <div class="col-sm-4 filter__item filter_category_2 filter_category_3 filter_category_4">
-
-                <!-- Portfolio item #4 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_4.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #4">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_4.jpg" alt="...">
-
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
-
-                  </a>
-                </div> <!-- / .portfolio__item -->
-
-              </div>
-              <div class="col-sm-4 filter__item filter_category_1 filter_category_2 filter_category_3">
-
-                <!-- Portfolio item #5 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_5.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #5">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_5.jpg" alt="...">
-
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
-
-                  </a>
-                </div> <!-- / .portfolio__item -->
-
-              </div>
-              <div class="col-sm-4 filter__item filter_category_4 filter_category_1 filter_category_2">
-
-                <!-- Portfolio item #6 -->
-                <div class="portfolio__item">
-                  <a href="assets/img/portfolio-screenshot_6.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #6">
-                      
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/img/portfolio-screenshot_6.jpg" alt="...">
-
-                    <!-- Mask -->
-                    <div class="portfolio-item__mask">
-                      <div class="portfolio-item-mask__wrapper">
-                        <div class="portfolio-item-mask-wrapper__inner">
-                          <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
-                          <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
-                          <p class="portfolio-item-mask__content animated fadeInDown">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
-                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
-                      </div> <!-- / .portfolio-item-mask__wrapper -->
-                    </div> <!-- / .portfolio-item__mask -->
-
-                  </a>
-                </div> <!-- / .portfolio__item -->
-
-              </div>
-            </div> <!-- / .row -->
-
-          </div> <!-- / .portfolio__items -->
-
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
-
-
-      <!-- PRICING SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                That's about <span class="text-primary">6 cups</span> of coffee
-              </h1>
-
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                Three pricing plans to fit a project of any size. Painless refund guaranteed.
+              <!-- Info -->
+              <h4 class="team-member__name">Judy Doe</h4>
+              <p class="team-member__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
               </p>
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-4">
               
-              <!-- Pricing item -->
-              <div class="pricing__item">
-
-                <!-- Pricing title -->
-                <h3 class="pricing-item__title">Single Application</h3>
-
-                <!-- Price -->
-                <div class="pricing-item__price">
-                  $ <span class="pricing-item-price__digits">10</span> /pc.
-                </div>
-
-                <!-- Pricing body -->
-                <div class="pricing-item__body">
-                  <p class="pricing-item-body__content">
-                    Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                  </p>
-                  <a href="#" class="btn btn-lg btn-primary">
-                    <span class="oi oi-cart" title="All" aria-hidden="true"></span>
-                    <span>Purchase now</span>
-                  </a>
-                </div>
-
-              </div> <!-- / .pricing__item -->
-
-            </div>
-            <div class="col-sm-4">
-              
-              <!-- Pricing item -->
-              <div class="pricing__item">
-
-                <!-- Pricing title -->
-                <h3 class="pricing-item__title">Multiple Applications</h3>
-
-                <!-- Price -->
-                <div class="pricing-item__price">
-                  $ <span class="pricing-item-price__digits">50</span> /pc.
-                </div>
-
-                <!-- Pricing body -->
-                <div class="pricing-item__body">
-                  <p class="pricing-item-body__content">
-                    Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                  </p>
-                  <a href="#" class="btn btn-lg btn-primary">
-                    <span class="oi oi-cart" title="All" aria-hidden="true"></span>
-                    <span>Purchase now</span>
-                  </a>
-                </div>
-
-              </div> <!-- / .pricing__item -->
-
-            </div>
-            <div class="col-sm-4">
-              
-              <!-- Pricing item -->
-              <div class="pricing__item">
-
-                <!-- Pricing title -->
-                <h3 class="pricing-item__title">Extended License</h3>
-
-                <!-- Price -->
-                <div class="pricing-item__price">
-                  $ <span class="pricing-item-price__digits">100</span> /pc.
-                </div>
-
-                <!-- Pricing body -->
-                <div class="pricing-item__body">
-                  <p class="pricing-item-body__content">
-                    Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
-                  </p>
-                  <a href="#" class="btn btn-lg btn-primary">
-                    <span class="oi oi-cart" title="All" aria-hidden="true"></span>
-                    <span>Purchase now</span>
-                  </a>
-                </div>
-
-              </div> <!-- / .pricing__item -->
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
-
-
-      <!-- TEAM SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                They've <span class="text-primary">made</span> this possible
-              </h1>
-
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                A team of hard-working enthusiastic people who helped this product come to life.
-              </p>
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-4">
-              
-              <!-- Team member -->
-              <div class="team__member">
-
-                <!-- Avatar -->
-                <div class="team-member__avatar">
-                  <img class="img-responsive" src="assets/img/photo_2.jpg" alt="...">
-                </div>
-
-                <!-- Info -->
-                <h4 class="team-member__name">Judy Doe</h4>
-                <p class="team-member__info">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
-                </p>
-                
-                <!-- Contact -->
-                <div class="team-member__contact">
-                  <a href="#" class="team-member-contact__item facebook">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item twitter">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item google-plus">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </div>
-                
-              </div> <!-- / .team__member -->
-
-            </div>
-            <div class="col-sm-4">
-              
-              <!-- Team member -->
-              <div class="team__member team__member_chief">
-
-                <!-- Avatar -->
-                <div class="team-member__avatar">
-                  <img class="img-responsive" src="assets/img/photo_1.jpg" alt="...">
-                </div>
-
-                <!-- Info -->
-                <h4 class="team-member__name">Richard Roe</h4>
-                <p class="team-member__info">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </p>
-                
-                <!-- Contact -->
-                <div class="team-member__contact">
-                  <a href="#" class="team-member-contact__item facebook">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item twitter">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item google-plus">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </div>
-                
-              </div> <!-- / .team__member -->
-
-            </div>
-            <div class="col-sm-4">
-              
-              <!-- Team member -->
-              <div class="team__member">
-
-                <!-- Avatar -->
-                <div class="team-member__avatar">
-                  <img class="img-responsive" src="assets/img/photo_3.jpg" alt="...">
-                </div>
-
-                <!-- Info -->
-                <h4 class="team-member__name">John Doe</h4>
-                <p class="team-member__info">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
-                </p>
-                
-                <!-- Contact -->
-                <div class="team-member__contact">
-                  <a href="#" class="team-member-contact__item facebook">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item twitter">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#" class="team-member-contact__item google-plus">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </div>
-                
-              </div> <!-- / .team__member -->
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
-
-
-      <!-- FEATURES SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                Key <span class="text-primary">product</span> features
-              </h1>
-
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                Even more reasons to purchase this template. More to come with a future update.
-              </p>
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-6 col-md-5 col-md-offset-1">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">01.</span> 
-                  Five color options
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-            <div class="col-sm-6 col-md-5">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">02.</span> 
-                  Two menu types
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-6 col-md-5 col-md-offset-1">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">03.</span> 
-                  Fully Responsive
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-            <div class="col-sm-6 col-md-5">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">04.</span> 
-                  Built with LESS
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-6 col-md-5 col-md-offset-1">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">05.</span> 
-                  Functional contact form
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-            <div class="col-sm-6 col-md-5">
-
-              <!-- Features item -->
-              <div class="features__item">
-
-                  <!-- Title -->
-                <h3 class="features-item__title">
-                  <span class="text-primary">06.</span> 
-                  Free future updates
-                </h3>
-
-                <!-- Summary -->
-                <div class="features-item__summary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
-                </div>
-              </div> <!-- / .features__item -->
-
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
-
-
-      <!-- CONTACT SCREEN
-      ============================== -->
-      <div class="site-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <!-- Heading -->
-              <h1 class="heading">
-                Feel free to  <span class="text-primary">contact us</span>
-              </h1>
-
-              <!-- Sub heading -->
-              <p class="heading__sub">
-                Do not hesitate to drop us a couple of lines. 24/7 support guaranteed.
-              </p>
-
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-sm-6 col-md-5 col-md-offset-1">
-
-              <!-- Contact info -->
-              <h3 class="contact-info__title">
-                Support<span class="text-primary">@example.com</span>
-              </h3>
-              <h3 class="contact-info__title">
-                (987)654-32-10
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br />
-                Nunc consectetur elit erat, id convallis ante ultrices ac. Pellentesque eget nisi at libero malesuada malesuada.
-              </p>
-
-              <!-- Social links -->
-              <div class="contact-info__social">
-                <a href="#" class="contact-info-social__item facebook">
+              <!-- Contact -->
+              <div class="team-member__contact">
+                <a href="#" class="team-member-contact__item facebook">
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="#" class="contact-info-social__item twitter">
+                <a href="#" class="team-member-contact__item twitter">
                   <i class="fa fa-twitter"></i>
                 </a>
-                <a href="#" class="contact-info-social__item google-plus">
+                <a href="#" class="team-member-contact__item google-plus">
                   <i class="fa fa-google-plus"></i>
                 </a>
               </div>
+              
+            </div> <!-- / .team__member -->
 
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-5">
+          </div>
+          <div class="col-sm-4">
+            
+            <!-- Team member -->
+            <div class="team__member team__member_chief">
 
-              <!-- Alert message -->
-              <div class="alert contact-form__alert" id="form_message" role="alert"></div>
+              <!-- Avatar -->
+              <div class="team-member__avatar">
+                <img class="img-responsive" src="assets/img/photo_1.jpg" alt="...">
+              </div>
 
-              <!-- Contact form -->
-              <!-- Please carefully read the README.txt file
-               in order to setup the PHP contact form properly -->
-              <form class="contact__form" id="form_sendemail">
-                <div class="row form-group">
-                  <div class="col-xs-6">
+              <!-- Info -->
+              <h4 class="team-member__name">Richard Roe</h4>
+              <p class="team-member__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </p>
+              
+              <!-- Contact -->
+              <div class="team-member__contact">
+                <a href="#" class="team-member-contact__item facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="team-member-contact__item twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="team-member-contact__item google-plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+              
+            </div> <!-- / .team__member -->
+
+          </div>
+          <div class="col-sm-4">
+            
+            <!-- Team member -->
+            <div class="team__member">
+
+              <!-- Avatar -->
+              <div class="team-member__avatar">
+                <img class="img-responsive" src="assets/img/photo_3.jpg" alt="...">
+              </div>
+
+              <!-- Info -->
+              <h4 class="team-member__name">John Doe</h4>
+              <p class="team-member__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
+              </p>
+              
+              <!-- Contact -->
+              <div class="team-member__contact">
+                <a href="#" class="team-member-contact__item facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="team-member-contact__item twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="team-member-contact__item google-plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+              
+            </div> <!-- / .team__member -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+
+
+    <!-- FEATURES
+    ============================== -->
+    <div class="site-wrapper" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <!-- Heading -->
+            <h1 class="heading">
+              Key <span class="text-primary">product</span> features
+            </h1>
+
+            <!-- Sub heading -->
+            <p class="heading__sub">
+              Even more reasons to purchase this template. More to come with a future update.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">01.</span> 
+                Five color options
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+          <div class="col-sm-6 col-md-5">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">02.</span> 
+                Two menu types
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">03.</span> 
+                Fully Responsive
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+          <div class="col-sm-6 col-md-5">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">04.</span> 
+                Built with LESS
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">05.</span> 
+                Functional contact form
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+          <div class="col-sm-6 col-md-5">
+
+            <!-- Features item -->
+            <div class="features__item">
+
+                <!-- Title -->
+              <h3 class="features-item__title">
+                <span class="text-primary">06.</span> 
+                Free future updates
+              </h3>
+
+              <!-- Summary -->
+              <div class="features-item__summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+              </div>
+            </div> <!-- / .features__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+
+
+    <!-- CONTACT
+    ============================== -->
+    <div class="site-wrapper" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <!-- Heading -->
+            <h1 class="heading">
+              Feel free to  <span class="text-primary">contact us</span>
+            </h1>
+
+            <!-- Sub heading -->
+            <p class="heading__sub">
+              Do not hesitate to drop us a couple of lines. 24/7 support guaranteed.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+
+            <!-- Alert message -->
+            <div class="alert contact-form__alert" id="form_message" role="alert"></div>
+
+            <!-- Contact form -->
+            <!-- Please carefully read the README.txt file
+             in order to setup the PHP contact form properly -->
+            <form class="contact__form" id="form_sendemail">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+
+                  <!-- Message -->
+                  <div class="form-group">
+                    <label for="message" class="sr-only">Your message</label>
+                    <textarea name="message" class="form-control" rows="8" id="message" placeholder="Message"></textarea>
+                    <span class="help-block"></span>
+                  </div>
+
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                  
+                  <!-- Email address -->
+                  <div class="form-group">
                     <label for="email" class="sr-only">Your email address</label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
                     <span class="help-block"></span>
                   </div>
-                  <div class="col-xs-6">
+
+                  <!-- Name -->
+                  <div class="form-group">
                     <label for="name" class="sr-only">Your name</label>
                     <input type="text" name="name" class="form-control" id="name" placeholder="Full Name">
                     <span class="help-block"></span>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="message" class="sr-only">Your message</label>
-                  <textarea name="message" class="form-control" rows="3" id="message" placeholder="Message"></textarea>
-                  <span class="help-block"></span>
-                </div>
 
-                <!-- reCAPTCHA -->
-                <div class="form-group" id="form-captcha">
+                  <!-- reCAPTCHA -->
+                  <div class="form-group" id="form-captcha">
+                    
+                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                    <span class="help-block"></span>
+                  </div>
+                  <!-- /reCAPTCHA -->
+
+                </div>
+                <div class="col-sm-12 text-center">
                   
-                  <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-                  <span class="help-block"></span>
+                  <button type="submit" class="btn btn-lg btn-default">
+                    <span class="oi oi-arrow-right" title="Send it" aria-hidden="true"></span>
+                    <span>Send message</span>
+                  </button>
+
                 </div>
-                <!-- /reCAPTCHA -->
+              </div> <!-- / .row -->
+            </form>
 
-                <button type="submit" class="btn btn-lg btn-primary">
-                  <span class="oi oi-arrow-right" title="Send it" aria-hidden="true"></span>
-                  <span>Send it</span>
-                </button>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
 
-              </form>
+    <!-- Google Map -->
+    <div class="site-wrapper">
+      <div id="map-canvas" class="contact__map"></div>
+    </div> <!-- / .site-wrapper -->
 
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-      </div> <!-- / .site-wrapper -->
 
-    </div> <!-- / #fullpage -->
+    <!-- FOOTER
+    ============================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            &copy;
+            <script>
+            var d = new Date();
+            document.write(d.getFullYear())</script>  Glasner Law Firm. All Rights Reserved.
+          </div>
+          <div class="col-xs col-sm-6">
+            <div class="social__items">
+              <a href="#" class="social__item">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" class="social__item">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" class="social__item">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </div> <!-- / .social__links -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- JavaScript
     ================================================== -->
     
     <!-- JS Global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     
     <!-- JS Plugins -->
-    <script src="assets/plugins/scrolloverflow/scrolloverflow.min.js"></script>
-    <script src="assets/plugins/fullpage/jquery.fullpage.min.js"></script>
-    <script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+    <script src="assets/plugins/smoothscroll/smoothscroll.min.js"></script>
+    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/plugins/lightbox/js/lightbox.min.js"></script>
     <script src="assets/plugins/contact/contact.js"></script>
+    <script src="assets/plugins/google-maps/google-maps.js"></script>
+    <script src="assets/plugins/scrolloverflow/scrolloverflow.min.js"></script>
+    <script src="assets/plugins/fullpage/jquery.fullpage.min.js"></script>
+    <script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
     <script src="assets/plugins/morphext/morphext.min.js"></script>
     
     <!-- JS Custom -->
