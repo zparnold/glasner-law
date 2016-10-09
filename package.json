@@ -1,0 +1,24 @@
+{
+  "name": "glasner-law",
+  "version": "1.0.0",
+  "description": "Larry's Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zparnold/glasner-law.git"
+  },
+  "author": "Zach Arnold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zparnold/glasner-law/issues"
+  },
+  "homepage": "https://github.com/zparnold/glasner-law#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0"
+  }
+}

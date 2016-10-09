@@ -7777,7 +7777,7 @@ body:not(.classic) .site-wrapper .container {
 }
 .team-member__name {
   margin-bottom: 20px;
-  color: #000F55;
+  color: #fff;
   text-transform: uppercase;
 }
 .team-member__info {

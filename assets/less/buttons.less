@@ -1,3 +1,5 @@
+@import "colors";
+@import "utilities";
 /* -------------------- *\
     #BUTTONS
 \* -------------------- */
@@ -6,13 +8,14 @@
  * Buttons base styles
  */
 
-#button {.btn(
-          @btn-color, 
-          @btn-color_hover, 
-          @btn-bg-color, 
-          @btn-bg-color_hover, 
-          @btn-border-color, 
-          @btn-border-color_hover) {
+#button {
+  .btn(
+    @btn-color,
+    @btn-color_hover,
+    @btn-bg-color,
+    @btn-bg-color_hover,
+    @btn-border-color,
+    @btn-border-color_hover) {
     border-radius: 0;
     border: 2px solid @btn-border-color;
     background: @btn-bg-color;
@@ -21,7 +24,7 @@
     font-size: @font-size-small;
     text-transform: uppercase;
     .transition(border-color .3s, color .3s;);
-    
+
     > span {
       position: relative;
       .transition(left .3s, opacity .3s;);
@@ -62,24 +65,24 @@
 
 .btn-default {
   #button > .btn(
-              @brand-primary, 
-              @brand-primary, 
-              transparent, 
-              transparent, 
-              @brand-primary,
-              @brand-primary);
+          @brand-primary,
+          @brand-primary,
+          transparent,
+          transparent,
+          @brand-primary,
+          @brand-primary);
 }
 
 /* Primary button */
 
 .btn-primary {
   #button > .btn(
-              white, 
-              @brand-primary, 
-              transparent, 
-              transparent, 
-              white,
-              @brand-primary);
+          white,
+          @brand-primary,
+          transparent,
+          transparent,
+          white,
+          @brand-primary);
 }
 
 /* Extra large button */
