@@ -7769,10 +7769,8 @@ body:not(.classic) .site-wrapper .container {
   }
 }
 .team-member__avatar {
-  max-width: 50%;
   margin: 0 auto 15px;
   border: 10px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   overflow: hidden;
 }
 .team-member__name {
