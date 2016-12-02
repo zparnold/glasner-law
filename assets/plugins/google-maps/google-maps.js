@@ -16,7 +16,7 @@ Last change:    07/07/2016
 /* Requires Google Maps API */
 
 function initialize() {
-  var myLatlng = new google.maps.LatLng(40.7833806,-74.0758533); // Change your location
+  var myLatlng = new google.maps.LatLng(40.5865,122.3917); // Change your location
   var mapOptions = {
     zoom: 5, // Change zoom value
     scrollwheel: false, // Change to "true" to enable users scale map on scroll
@@ -27,7 +27,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'Your business is here!' // Change the pinpoint popup text
+      title: 'Glasner Law Firm' // Change the pinpoint popup text
   });
 }
 
