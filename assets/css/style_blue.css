@@ -7142,7 +7142,7 @@ body.classic .portfolio-item__mask {
   height: auto;
 }
 body.classic #team {
-  background-image: url(../img/bg-pattern.png), url(../img/screen-bg_5.jpg);
+  background-image: url(../img/bg-pattern.png), url(https://github.com/zparnold/glasner-law/blob/master/assets/img/Background.jpg?raw=true);
   background-position: top left, center center;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -7769,7 +7769,7 @@ body:not(.classic) .site-wrapper .container {
   }
 }
 .team-member__avatar {
-  margin: 0 auto 15px;
+  margin: auto;
   border: 10px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }

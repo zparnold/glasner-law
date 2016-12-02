@@ -160,6 +160,17 @@ if ( $("body.classic").length ) {
 
 }
 
+/* -------------------- *\
+    Awards Carosel
+\* -------------------- */
+
+$(".flip").on("click", function(e) {
+  var target = $(this).attr("href");
+  $(target).slideToggle("slow");
+  $(".panel").not(target).hide();
+
+  e.preventDefault();
+});
 
 
 /* -------------------- *\

@@ -7142,7 +7142,7 @@ body.classic .portfolio-item__mask {
   height: auto;
 }
 body.classic #team {
-  background-image: url(../img/bg-pattern.png), url(../img/screen-bg_5.jpg);
+  background-image: url(../img/bg-pattern.png), url(glasner-law/assets/img/Mt_Shasta.jpe);
   background-position: top left, center center;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -7272,9 +7272,10 @@ body.classic footer .social__item:focus {
 @media (min-width: 768px) {
   /* General */
   body.classic .site-wrapper {
+    
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-bottom: 1px solid #eee;
   }
   body.classic #about {
@@ -7769,7 +7770,7 @@ body:not(.classic) .site-wrapper .container {
   }
 }
 .team-member__avatar {
-  max-width: 50%;
+  max-width: 100%;
   margin: 0 auto 15px;
   border: 10px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -7831,6 +7832,8 @@ body:not(.classic) .site-wrapper .container {
   margin: 0 0 20px;
   text-transform: uppercase;
 }
+
+
 /* -------------------- *\
     #CONTACT SCREEN
 \* -------------------- */
