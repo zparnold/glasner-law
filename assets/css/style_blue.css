@@ -1320,6 +1320,7 @@ mark,
 }
 .text-justify {
   text-align: justify;
+  font-size: larger;
 }
 .text-nowrap {
   white-space: nowrap;
