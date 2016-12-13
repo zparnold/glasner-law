@@ -1115,6 +1115,16 @@ figure {
 img {
   vertical-align: middle;
 }
+.img-awards,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+{
+  height: auto;
+  width: 100%;
+  
+}
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -7755,6 +7765,7 @@ body:not(.classic) .site-wrapper .container {
 /* -------------------- *\
     #TEAM SCREEN
 \* -------------------- */
+
 .team__member {
   margin: 0 auto 40px;
   text-align: center;
